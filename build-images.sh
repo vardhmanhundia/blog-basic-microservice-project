@@ -10,3 +10,5 @@ done
 for repo in ${repositories[@]}; do
   docker push ${docker_username}/${repo}
 done
+
+kubectl apply -f ./infra/k8s
